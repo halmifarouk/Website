@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portail Safran Electrical & Power</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="image/logo.png" alt="Logo Safran" class="logo">
+            Portail Safran Electrical & Power
+        </header>
+        <form action="orders.html" id="loginForm">
+            <div class="field matricule">
+                <div class="input-area">
+                    <input type="text" placeholder="Matricule" id="matricule">
+                    <i class="icon fas fa-id-badge"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt">Le matricule ne peut pas être vide</div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" placeholder="Mot de passe" id="password">
+                    <i class="icon fas fa-lock"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt">Le mot de passe ne peut pas être vide</div>
+            </div>
+            <div class="pass-txt"><a href="#" id="forgotPassword">Mot de passe oublié ?</a></div>
+            <input type="submit" value="Connexion">
+        </form>
+       
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

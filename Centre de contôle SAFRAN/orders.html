@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre de control Safran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="image/logo.png" alt="Logo Safran" class="logo">
+            Centre de contrôle 
+        </header>
+        <div class="table-container">
+            <table id="ordersTable">
+                <thead>
+                    <tr>
+                        <th>Programme</th>
+                        <th>Ordre de fabrication</th>
+                        <th>Type de contrôle</th>
+                        <th>Statut de la commande</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Les lignes de commandes seront ajoutées ici -->
+                </tbody>
+            </table>
+        </div>
+        <div class="form-container">
+            <select id="programme">
+                <option value="1er bout">1er bout</option>
+                <option value="2ème bout">2ème bout</option>
+                <option value="Cheminement">Cheminement</option>
+            </select>
+            <input type="text" id="ordre" placeholder="Ordre de fabrication">
+            <div class="checkbox-group">
+                <label><input type="checkbox" value="Non-abilité"> Non-abilité</label>
+                <label><input type="checkbox" value="Sertissage"> Sertissage</label>
+                <label><input type="checkbox" value="Cosse"> Cosse</label>
+                <label><input type="checkbox" value="Dénudage"> Dénudage</label>
+                <label><input type="checkbox" value="Autre"> Autre</label>
+            </div>
+            <button onclick="addOrder()">Ajouter Commande</button>
+        </div>
+    </div>
+
+    <script src="orders.js"></script>
+</body>
+
+</html>
